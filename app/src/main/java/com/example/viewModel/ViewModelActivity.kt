@@ -23,7 +23,7 @@ class ViewModelActivity : AppCompatActivity() {
         tvCount = findViewById(R.id.tv_count)
         btn_submit = findViewById(R.id.btn_submit)
 
-        viewModelDemo = ViewModelProvider(this).get(ViewModelDemo::class.java)
+        viewModelDemo = ViewModelProvider(this,ViewModelFactory(10)).get(ViewModelDemo::class.java)
 
         setText()
 

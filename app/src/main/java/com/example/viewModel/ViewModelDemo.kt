@@ -12,9 +12,9 @@ view model are lifecycle aware.*/
 
 
 
-class ViewModelDemo:ViewModel() {
+class ViewModelDemo(val initialValue:Int):ViewModel() {
 
-    var count:Int=0
+    var count:Int=initialValue
 
     fun increment(){
         count++
